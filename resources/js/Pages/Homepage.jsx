@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "./Component/Button";
+import Field from "./Component/Field";
 
 export default class Homepage extends React.Component {
     render() {
@@ -6,16 +8,11 @@ export default class Homepage extends React.Component {
             <>
                 <header className="fixed py-6 px-24 w-full flex justify-end bg-white">
                     <form className="w-[324px] flex">
-                        <input
-                            className="w-full border border-gray-300"
-                            placeholder="Cari produk..."
+                        <Field placeholder="Cari Produk" />
+                        <Button
+                            label={<ion-icon name="search-outline"></ion-icon>}
+                            color="fill"
                         />
-                        <button
-                            className="px-8 py-4 bg-red-500 text-white"
-                            type="submit"
-                        >
-                            Go
-                        </button>
                     </form>
                 </header>
             </>
