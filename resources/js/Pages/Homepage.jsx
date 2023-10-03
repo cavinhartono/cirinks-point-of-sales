@@ -1,20 +1,11 @@
 import React from "react";
-import Button from "./Component/Button";
-import Field from "./Component/Field";
+import Header from "./Component/Header";
 
 export default class Homepage extends React.Component {
     render() {
         return (
             <>
-                <header className="fixed py-6 px-24 w-full flex justify-end bg-white">
-                    <form className="w-[324px] flex">
-                        <Field placeholder="Cari Produk" />
-                        <Button
-                            label={<ion-icon name="search-outline"></ion-icon>}
-                            color="fill"
-                        />
-                    </form>
-                </header>
+                <Header />
             </>
         );
     }
